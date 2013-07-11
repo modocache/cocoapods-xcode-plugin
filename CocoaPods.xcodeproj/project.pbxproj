@@ -16,6 +16,9 @@
 		DAB0A1E6178DF5EE004A754B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB0A1E5178DF5EE004A754B /* SenTestingKit.framework */; };
 		DAB0A1EC178DF5EE004A754B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB0A1EA178DF5EE004A754B /* InfoPlist.strings */; };
 		DAB0A1F6178DF64E004A754B /* CocoaPodsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0A1F5178DF64E004A754B /* CocoaPodsSpec.m */; };
+		DADA5A74178EFA9E00A53254 /* CocoaPodsFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DADA5A73178EFA9E00A53254 /* CocoaPodsFileManager.m */; };
+		DADA5A76178EFAF100A53254 /* CocoaPodsFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DADA5A73178EFA9E00A53254 /* CocoaPodsFileManager.m */; };
+		DADA5A77178EFAF100A53254 /* CocoaPodsFileManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DADA5A75178EFAC100A53254 /* CocoaPodsFileManagerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		DAB0A1EF178DF5EE004A754B /* CocoaPodsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaPodsTests-Prefix.pch"; sourceTree = "<group>"; };
 		DAB0A1F5178DF64E004A754B /* CocoaPodsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsSpec.m; sourceTree = "<group>"; };
 		DAD58A90178E096700939F87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DADA5A72178EFA9E00A53254 /* CocoaPodsFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaPodsFileManager.h; sourceTree = "<group>"; };
+		DADA5A73178EFA9E00A53254 /* CocoaPodsFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsFileManager.m; sourceTree = "<group>"; };
+		DADA5A75178EFAC100A53254 /* CocoaPodsFileManagerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsFileManagerSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 			children = (
 				8A8085A7178B93C4006E56E3 /* CocoaPods.h */,
 				8A8085A8178B93C4006E56E3 /* CocoaPods.m */,
+				DADA5A72178EFA9E00A53254 /* CocoaPodsFileManager.h */,
+				DADA5A73178EFA9E00A53254 /* CocoaPodsFileManager.m */,
 				8A8085A2178B93C4006E56E3 /* Supporting Files */,
 			);
 			name = CocoaPods;
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB0A1F5178DF64E004A754B /* CocoaPodsSpec.m */,
+				DADA5A75178EFAC100A53254 /* CocoaPodsFileManagerSpec.m */,
 				DAB0A1E8178DF5EE004A754B /* Supporting Files */,
 			);
 			path = CocoaPodsTests;
@@ -259,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A8085A9178B93C4006E56E3 /* CocoaPods.m in Sources */,
+				DADA5A74178EFA9E00A53254 /* CocoaPodsFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADA5A76178EFAF100A53254 /* CocoaPodsFileManager.m in Sources */,
+				DADA5A77178EFAF100A53254 /* CocoaPodsFileManagerSpec.m in Sources */,
 				DA5DD7DA178E02900032D9C3 /* CocoaPods.m in Sources */,
 				DAB0A1F6178DF64E004A754B /* CocoaPodsSpec.m in Sources */,
 			);

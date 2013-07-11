@@ -1,5 +1,5 @@
 //
-//  CocoadocsSpec.m
+//  CocoaPodsSpec.m
 //
 //  Copyright (c) 2013 Delisa Mason. http://delisa.me
 //
@@ -23,6 +23,7 @@
 
 #import <Kiwi/Kiwi.h>
 #import "CocoaPods.h"
+#import "CocoaPodsFileManager.h"
 
 
 static NSString * const kCocoaPodsPluginPath =
@@ -44,7 +45,6 @@ NSMenu *createFakeMenu() {
 
 @interface CocoaPods (TestExtensions)
 + (void)pluginDidLoad:(NSBundle *)bundle;
-- (BOOL)doesPodfileExist;
 @end
 
 
@@ -119,7 +119,7 @@ describe(@"CocoaPods", ^{
 
                     context(@"a Podfile does not exist in the workspace directory", ^{
                         beforeEach(^{
-                            [cocoaPods stub:@selector(doesPodfileExist) andReturn:theValue(NO)];
+                            [CocoaPodsFileManager stub:@selector(doesPodfileExist) andReturn:theValue(NO)];
                         });
 
                         it(@"is disabled", ^{
@@ -129,7 +129,7 @@ describe(@"CocoaPods", ^{
 
                     context(@"a Podfile does exist in the workspace directory", ^{
                         beforeEach(^{
-                            [cocoaPods stub:@selector(doesPodfileExist) andReturn:theValue(YES)];
+                            [CocoaPodsFileManager stub:@selector(doesPodfileExist) andReturn:theValue(YES)];
                         });
 
                         it(@"is enabled", ^{

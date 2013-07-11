@@ -110,6 +110,10 @@ describe(@"CocoaPods", ^{
                     [[[cocoaPodsMenuItem.submenu itemWithTitle:@"Integrate Pods"] shouldNot] beNil];
                 });
 
+                it(@"has the menu item 'Product > CocoaPods > Edit Podfile'", ^{
+                    [[[cocoaPodsMenuItem.submenu itemWithTitle:@"Edit Podfile"] shouldNot] beNil];
+                });
+
                 describe(@"'Product > CocoaPods > Integrate Pods' menu item", ^{
                     __block NSMenuItem *integratePodsMenuItem = nil;
                     beforeEach(^{

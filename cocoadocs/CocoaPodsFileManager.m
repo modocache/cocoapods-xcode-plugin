@@ -37,6 +37,12 @@
 }
 
 + (void)openPodfileForEditing {
+    if (![self doesPodfileExist]) {
+        [[NSFileManager defaultManager] createFileAtPath:[self podfilePath]
+                                                contents:nil
+                                              attributes:nil];
+    }
+
     [[[NSApplication sharedApplication] delegate] application:[NSApplication sharedApplication]
                                                      openFile:[self podfilePath]];
 }

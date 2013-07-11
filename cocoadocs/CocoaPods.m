@@ -74,7 +74,7 @@ static NSString *XAR_EXECUTABLE = @"/usr/bin/xar";
 #pragma mark - NSMenuValidation Protocol Methods
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
-    if ([menuItem isEqual:self.installPodsItem] || [menuItem isEqual:self.editPodfileItem]) {
+    if ([menuItem isEqual:self.installPodsItem]) {
         return [CocoaPodsFileManager doesPodfileExist];
     }
 
